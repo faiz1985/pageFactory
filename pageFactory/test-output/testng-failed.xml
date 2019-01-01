@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [pageFactorySuite]">
+  <parameter name="loginLink" value="Log In"/>
+  <parameter name="password" value="Novem*2018"/>
+  <parameter name="uname" value="faiz1985@gmail.com"/>
+  <parameter name="loginURL" value="https://robinhood.com/login"/>
+  <parameter name="loginClickButton" value="_1q0oQo76jB7KFKWPCMPzDW"/>
+  <parameter name="ChromeDriverPath" value="C:\\Users\\faiz1\\Desktop\\Selenium\\chromedriver.exe"/>
+  <parameter name="Chromedriver" value="webdriver.chrome.driver"/>
+  <parameter name="URL" value="https://www.robinhood.com"/>
+  <test thread-count="5" name="pageFactoryTest(failed)">
+    <classes>
+      <class name="pageFactoryPkg.pageFactoryClass">
+        <methods>
+          <include name="initializeBrowser"/>
+          <include name="findBuyingPower"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- pageFactoryPkg.pageFactoryClass -->
+    </classes>
+  </test> <!-- pageFactoryTest(failed) -->
+</suite> <!-- Failed suite [pageFactorySuite] -->

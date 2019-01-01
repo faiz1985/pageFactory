@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="pageFactorySuite" duration-ms="18485" started-at="2019-01-01T13:43:35Z" finished-at="2019-01-01T13:43:53Z">
+    <groups>
+    </groups>
+    <test name="pageFactoryTest" duration-ms="18485" started-at="2019-01-01T13:43:35Z" finished-at="2019-01-01T13:43:53Z">
+      <class name="pageFactoryPkg.pageFactoryClass">
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String, java.lang.String)[pri:0, instance:pageFactoryPkg.pageFactoryClass@4c70fda8]" name="initializeBrowser" is-config="true" duration-ms="5908" started-at="2019-01-01T13:43:35Z" finished-at="2019-01-01T13:43:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C:\\Users\\faiz1\\Desktop\\Selenium\\chromedriver.exe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.robinhood.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:pageFactoryPkg.pageFactoryClass@4c70fda8]" name="login" duration-ms="8242" started-at="2019-01-01T13:43:41Z" finished-at="2019-01-01T13:43:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://robinhood.com/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[faiz1985@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Novem*2018]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="findBuyingPower()[pri:1, instance:pageFactoryPkg.pageFactoryClass@4c70fda8]" name="findBuyingPower" duration-ms="3567" started-at="2019-01-01T13:43:49Z" depends-on-methods="pageFactoryPkg.pageFactoryClass.login" finished-at="2019-01-01T13:43:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findBuyingPower -->
+        <test-method status="PASS" signature="closeBrowser()[pri:2, instance:pageFactoryPkg.pageFactoryClass@4c70fda8]" name="closeBrowser" duration-ms="739" started-at="2019-01-01T13:43:53Z" depends-on-methods="pageFactoryPkg.pageFactoryClass.login" finished-at="2019-01-01T13:43:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- pageFactoryPkg.pageFactoryClass -->
+    </test> <!-- pageFactoryTest -->
+  </suite> <!-- pageFactorySuite -->
+</testng-results>

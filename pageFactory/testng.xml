@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="pageFactorySuite">
+
+<parameter name="URL" value="https://www.robinhood.com"/>
+<parameter name="Chromedriver" value="webdriver.chrome.driver"/>
+<parameter name="ChromeDriverPath" value="C:\\Users\\faiz1\\Desktop\\Selenium\\chromedriver.exe"/>
+<parameter name="loginURL" value="https://robinhood.com/login"/>
+<parameter name="loginLink" value="Log In"/>
+<parameter name="uname" value="faiz1985@gmail.com"/>
+<parameter name="password" value="Novem*2018"/>
+<parameter name="loginClickButton" value="_1q0oQo76jB7KFKWPCMPzDW"/>
+
+  <test thread-count="5" name="pageFactoryTest">
+    <classes>
+      <class name="pageFactoryPkg.pageFactoryClass"/>
+    </classes>
+  </test> <!-- pageFactoryTest -->
+</suite> <!-- pageFactorySuite -->
